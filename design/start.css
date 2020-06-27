@@ -107,7 +107,7 @@ header p{
 
 .home-cards{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   margin-left: 170px;
   margin-right: 170px;
@@ -135,7 +135,7 @@ header p{
 
 .home-cards1{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   margin-left: 170px;
   margin-right: 170px;
@@ -183,6 +183,12 @@ header p{
   text-align: center;
 
 }
+@media(max-width: 500px){
+  .home-cards{
+    grid-template-columns:  1fr;  
+} 
+.home-cards1{
+  grid-template-columns:   1fr;
+}
 
-
-
+}
